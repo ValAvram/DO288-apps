@@ -24,7 +24,7 @@ public Response ready() throws Exception {
     return Response.ok("OK\n").build();
   }
 
-}
+
 
 @GET
 @Path("/healthy")
