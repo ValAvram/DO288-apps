@@ -14,7 +14,7 @@ public class Quip {
 @Produces("text/plain")
 public Response index() throws Exception {
     String host = InetAddress.getLocalHost().getHostName();
-    return Response.ok("Veni, vidi, vici...\n").build();
+    return Response.ok("I came, I saw, I conquered...\n").build();
   }
 
 @GET
@@ -25,4 +25,14 @@ public Response ready() throws Exception {
   }
 
 }
+
+@GET
+@Path("/healthy")
+@Produces("text/plain")
+public Response ready() throws Exception {
+    return Response.ok("OK\n").build();
+  }
+
+}
+
 
