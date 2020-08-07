@@ -29,7 +29,7 @@ public Response ready() throws Exception {
 @GET
 @Path("/healthy")
 @Produces("text/plain")
-public Response ready() throws Exception {
+public Response healthy() throws Exception {
     return Response.ok("OK\n").build();
   }
 
